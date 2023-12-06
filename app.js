@@ -5,10 +5,11 @@ const cors = require('cors')
 
 const app = express();
 const isDev = app.settings.env === 'development'
-const URL = isDev ? 'http://localhost:3000' : 'https://whiteboard-5emkycryg-tanay-tapanshus-projects.vercel.app/'
+const URL = isDev ? 'http://localhost:3000' : 'https://whiteboard-tanay-tapanshus-projects.vercel.app/'
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://whiteboard-5emkycryg-tanay-tapanshus-projects.vercel.app/'
+  'https://whiteboard-tanay-tapanshus-projects.vercel.app/',
+  'https://whiteboard-hkmkvwgwp-tanay-tapanshus-projects.vercel.app/'
 ];
 
 app.use(cors({origin: allowedOrigins}))
